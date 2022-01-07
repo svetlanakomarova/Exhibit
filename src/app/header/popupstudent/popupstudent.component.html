@@ -1,0 +1,14 @@
+<h3 mat-dialog-title>{{data.A4Name}}</h3>
+
+<div class="aboutMe" mat-dialog-content>
+  <p><strong>Contact Me: </strong>{{data.A4Email}}</p>
+  <p><strong>My Login: </strong>{{data.A4Login}}</p>
+  <p><strong>My Student Number: </strong>{{data.A4ID}}</p>
+  <p><img src="assets/images/{{data.A4Photo}}" width="100" id="mypic"></p>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-fab (click)="onOK()">
+    OK
+  </button>
+</div>

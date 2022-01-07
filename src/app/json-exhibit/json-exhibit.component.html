@@ -1,0 +1,12 @@
+<h3>Art on Exhibit</h3>
+<table>
+  <tr>
+    <th>Title</th><th>Creator</th><th>Creation Date</th>
+  </tr>
+  <tr *ngFor="let art of artList">
+    <td [ngStyle]="{backgroundColor: '#ffe6e6'}">
+      <a href="{{art.url}}" target="_blank">{{art.title}}</a></td>
+    <td [ngStyle]="{backgroundColor: '#e6f2ff'}">{{art.creator}}</td>
+    <td [ngStyle]="{backgroundColor: '#ededf8'}">{{art.creation_date}}</td>
+  </tr>
+</table>

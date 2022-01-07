@@ -1,0 +1,33 @@
+<app-header [student]="student"></app-header>
+
+<mat-tab-group mat-stretch-tabs  
+               class="example-stretched-tabs mat-elevation-z4"
+		[ngStyle]="{textAlign: 'center'}">
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        Art on Exhibit&nbsp;&nbsp;
+        <mat-icon color="primary">
+          <span class="material-icons">
+            interests
+            </span>
+        </mat-icon>
+      </ng-template>
+
+      <app-json-exhibit [artList]="artList"></app-json-exhibit>
+    </mat-tab>
+    
+    <mat-tab>
+      <ng-template mat-tab-label>
+        Art by Nation&nbsp;&nbsp;
+        <mat-icon color="primary">
+          <span class="material-icons">
+            holiday_village
+            </span>
+        </mat-icon>
+      </ng-template>
+
+      <app-json-nation [artList]="artList" [nationList]="nationList"></app-json-nation>
+    </mat-tab>
+</mat-tab-group>
+<app-footer></app-footer>

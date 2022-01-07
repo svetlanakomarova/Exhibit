@@ -1,0 +1,13 @@
+<span *ngFor="let btn of nationList; let i = index">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <button mat-fab color="primary"
+            (click)="displayNation(i)">
+    {{btn.nation}}
+  </button>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+
+<div id="list">
+  <p [innerHTML]="outArea"></p>
+</div>
+
